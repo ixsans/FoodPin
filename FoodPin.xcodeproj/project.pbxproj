@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461845F51F341B62007E22FC /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461845F41F341B62007E22FC /* RestaurantTableViewCell.swift */; };
 		463E09091F32DCF800D5E152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463E09081F32DCF800D5E152 /* AppDelegate.swift */; };
-		463E090B1F32DCF800D5E152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463E090A1F32DCF800D5E152 /* ViewController.swift */; };
 		463E090E1F32DCF800D5E152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463E090C1F32DCF800D5E152 /* Main.storyboard */; };
 		463E09101F32DCF800D5E152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463E090F1F32DCF800D5E152 /* Assets.xcassets */; };
 		463E09131F32DCF800D5E152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463E09111F32DCF800D5E152 /* LaunchScreen.storyboard */; };
+		463E091B1F32E0F400D5E152 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463E091A1F32E0F400D5E152 /* RestaurantTableViewController.swift */; };
+		46C97F591F54FF2000DA5A82 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C97F581F54FF2000DA5A82 /* Restaurant.swift */; };
+		46C97F5B1F554D3B00DA5A82 /* RestaurantDetailViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C97F5A1F554D3B00DA5A82 /* RestaurantDetailViewCellTableViewCell.swift */; };
+		46C97F5D1F554DCD00DA5A82 /* RestaurantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C97F5C1F554DCD00DA5A82 /* RestaurantDetailTableViewController.swift */; };
+		46FAAC191F62954D00A81854 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAAC181F62954D00A81854 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461845F41F341B62007E22FC /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		463E09051F32DCF800D5E152 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		463E09081F32DCF800D5E152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		463E090A1F32DCF800D5E152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		463E090D1F32DCF800D5E152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		463E090F1F32DCF800D5E152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		463E09121F32DCF800D5E152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		463E09141F32DCF800D5E152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463E091A1F32E0F400D5E152 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		46C97F581F54FF2000DA5A82 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Restaurant.swift; sourceTree = "<group>"; };
+		46C97F5A1F554D3B00DA5A82 /* RestaurantDetailViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		46C97F5C1F554DCD00DA5A82 /* RestaurantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewController.swift; sourceTree = "<group>"; };
+		46FAAC181F62954D00A81854 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		463E09071F32DCF800D5E152 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				46C97F581F54FF2000DA5A82 /* Restaurant.swift */,
 				463E09081F32DCF800D5E152 /* AppDelegate.swift */,
-				463E090A1F32DCF800D5E152 /* ViewController.swift */,
 				463E090C1F32DCF800D5E152 /* Main.storyboard */,
 				463E090F1F32DCF800D5E152 /* Assets.xcassets */,
 				463E09111F32DCF800D5E152 /* LaunchScreen.storyboard */,
 				463E09141F32DCF800D5E152 /* Info.plist */,
+				463E091A1F32E0F400D5E152 /* RestaurantTableViewController.swift */,
+				461845F41F341B62007E22FC /* RestaurantTableViewCell.swift */,
+				46C97F5A1F554D3B00DA5A82 /* RestaurantDetailViewCellTableViewCell.swift */,
+				46C97F5C1F554DCD00DA5A82 /* RestaurantDetailTableViewController.swift */,
+				46FAAC181F62954D00A81854 /* ReviewViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				463E090B1F32DCF800D5E152 /* ViewController.swift in Sources */,
+				46C97F591F54FF2000DA5A82 /* Restaurant.swift in Sources */,
+				463E091B1F32E0F400D5E152 /* RestaurantTableViewController.swift in Sources */,
+				46FAAC191F62954D00A81854 /* ReviewViewController.swift in Sources */,
+				46C97F5D1F554DCD00DA5A82 /* RestaurantDetailTableViewController.swift in Sources */,
+				46C97F5B1F554D3B00DA5A82 /* RestaurantDetailViewCellTableViewCell.swift in Sources */,
+				461845F51F341B62007E22FC /* RestaurantTableViewCell.swift in Sources */,
 				463E09091F32DCF800D5E152 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ixsanlabs.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,6 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ixsanlabs.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -300,6 +322,7 @@
 				463E09191F32DCF800D5E152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

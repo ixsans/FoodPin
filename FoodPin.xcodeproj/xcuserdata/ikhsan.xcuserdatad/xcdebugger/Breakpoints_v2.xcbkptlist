@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodPin/RestaurantDetailViewController.swift"
+            timestampString = "525666290.381274"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "RestaurantDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantDetailViewController.__deallocating_deinit"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ikhsan/ios_workspace/FoodPin/FoodPin/RestaurantDetailViewController.swift"
+                  timestampString = "525666290.436101"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantDetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FoodPin.RestaurantDetailViewController"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ikhsan/ios_workspace/FoodPin/FoodPin/RestaurantDetailViewController.swift"
+                  timestampString = "525666290.447868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantDetailViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FoodPin.RestaurantDetailViewController"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ikhsan/ios_workspace/FoodPin/FoodPin/RestaurantDetailViewController.swift"
+                  timestampString = "525666290.450755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantDetailViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FoodPin.RestaurantDetailViewController&gt;"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ikhsan/ios_workspace/FoodPin/FoodPin/RestaurantDetailViewController.swift"
+                  timestampString = "525666290.453308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantDetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FoodPin.RestaurantDetailViewController&gt;"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ikhsan/ios_workspace/FoodPin/FoodPin/RestaurantDetailViewController.swift"
+                  timestampString = "525666290.456083"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
