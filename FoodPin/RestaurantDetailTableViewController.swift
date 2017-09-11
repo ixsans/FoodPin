@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
 class RestaurantDetailTableViewController:  UIViewController, UITableViewDataSource,
 UITableViewDelegate {
 
     @IBOutlet var restaurantImageView:UIImageView!
     @IBOutlet var tableView:UITableView!
+    @IBOutlet var mapView:MKMapView!
 
     @IBAction func close(segue:UIStoryboardSegue){
         
@@ -58,7 +60,49 @@ UITableViewDelegate {
         
         restaurantImageView.image = UIImage(named: restaurant.image)
         
+        //create tap recognizer with action = showMap
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showMap))
+        //use regognizer for map touch action
+        mapView.addGestureRecognizer(tapGestureRecognizer)
         
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString("524 Ct St, Brooklyn, NY 11231", completionHandler: {
+            placemarks, error in
+            if error != nil{
+                print(error!)
+                return
+            }
+            
+            if let placemarks = placemarks {
+                // Get the first placemark
+                let placemark = placemarks[0]
+                // Add annotation
+                let annotation = MKPointAnnotation()
+                if let location = placemark.location {
+                    // Display the annotation
+                    annotation.coordinate = location.coordinate
+                    self.mapView.addAnnotation(annotation)
+                    // Set the zoom level
+                    let region =
+                        MKCoordinateRegionMakeWithDistance(annotation.coordinate, 250, 250)
+                    self.mapView.setRegion(region, animated: false)
+                }
+            }
+        })
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap"{
+            let destinationViewController = segue.destination as! MapViewController
+            destinationViewController.restaurant = restaurant
+        }
+        
+    }
+    
+    func showMap(){
+        performSegue(withIdentifier: "showMap", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
