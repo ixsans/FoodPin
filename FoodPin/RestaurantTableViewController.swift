@@ -11,6 +11,15 @@ import UIKit
 class RestaurantTableViewController: UITableViewController {
 
     
+    @IBAction func unwindToHomeScreen(segue:UIStoryboardSegue){
+        if let sourceViewController = segue.source as? AddRestaurantTableViewController {
+            let restaurant = sourceViewController.restaurant
+            
+            print(restaurant?.name)
+            
+        }
+    }
+    
     
     var restaurants:[Restaurant] = [
         Restaurant(name: "Cafe Deadendkdlskadklaldkad adlkadladkads adlkadas", type: "Coffee & Tea Shop", location: "HongKong", image: "cafedeadend.jpg", isVisited: false),
@@ -170,6 +179,8 @@ class RestaurantTableViewController: UITableViewController {
         }
         
     }
+    
+    
  
 
 }
