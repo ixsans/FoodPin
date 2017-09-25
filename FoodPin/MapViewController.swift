@@ -13,7 +13,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet var mapView:MKMapView!
     
-    var restaurant:Restaurant!
+    var restaurant:RestaurantMO!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let identifier = "MyPin"
-        print("restaurant "+restaurant.image)
         if annotation.isKind(of: MKUserLocation.self){
             return nil
         }
@@ -70,10 +69,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         
         let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
-        leftIconView.image = UIImage(named: restaurant.image)
+        leftIconView.image = UIImage(data: restaurant.image as! Data)
         annotationView?.leftCalloutAccessoryView = leftIconView
         
-        print("restaurant "+restaurant.image)
         
         return annotationView
     }

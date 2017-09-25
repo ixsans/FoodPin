@@ -13,12 +13,14 @@ class AddRestaurantTableViewController: UITableViewController,UIImagePickerContr
     @IBOutlet var photoImageView: UIImageView!
     @IBOutlet var restaurantNameField: UITextField!
     @IBOutlet var restaurantTypeField: UITextField!
+    @IBOutlet var phoneNumberField: UITextField!
     @IBOutlet var restaurantLocationField: UITextField!
     @IBOutlet var yesButton: UIButton!
     @IBOutlet var noBUtton: UIButton!
     
     var isVisited = false
-    var restaurant: Restaurant!
+    var restaurant: RestaurantMO!
+    
     
     @IBAction func toggleBeenHere(sender: UIButton){
         if sender == yesButton{
@@ -47,9 +49,26 @@ class AddRestaurantTableViewController: UITableViewController,UIImagePickerContr
             print(restaurantNameField.text!)
             print(restaurantTypeField.text!)
             print(restaurantLocationField.text!)
+            print(phoneNumberField.text!)
             print("is visited: \(isVisited)")
             
-            restaurant = Restaurant(name: restaurantNameField.text!, type: restaurantTypeField.text!, location: restaurantLocationField.text!, image: "", isVisited: isVisited)
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate){
+                restaurant = RestaurantMO(context: appDelegate.persistentContainer.viewContext)
+                restaurant.name = restaurantNameField.text
+                restaurant.type = restaurantTypeField.text
+                restaurant.location = restaurantLocationField.text
+                restaurant.isVisited = isVisited
+                restaurant.phone = phoneNumberField.text
+                
+                if let restaurantImage = photoImageView.image{
+                    if let imageData = UIImagePNGRepresentation(restaurantImage){
+                        restaurant.image = NSData(data: imageData)
+                    }
+                }
+                
+                print("Save data to context...")
+                appDelegate.saveContext()
+            }
             
             performSegue(withIdentifier: "unwindToHomeScreen", sender: self)
         }

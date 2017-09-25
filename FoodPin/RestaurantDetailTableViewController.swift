@@ -21,7 +21,7 @@ UITableViewDelegate {
     }
     
    
-    var restaurant:Restaurant!
+    var restaurant:RestaurantMO!
     //var fieldNameLabel = ["Name", "Location", "Type"]
     
     
@@ -38,6 +38,10 @@ UITableViewDelegate {
                     restaurant.rating = "I don't like it"
                 default:
                     break
+            }
+            
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate){
+                appDelegate.saveContext()
             }
             
             tableView.reloadData()
@@ -58,7 +62,7 @@ UITableViewDelegate {
         tableView.estimatedRowHeight = 66.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        restaurantImageView.image = UIImage(named: restaurant.image)
+        restaurantImageView.image = UIImage(data: restaurant.image as! Data)
         
         //create tap recognizer with action = showMap
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showMap))
